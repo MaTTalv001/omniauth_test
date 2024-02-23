@@ -1,5 +1,5 @@
 # ベースイメージの指定
-FROM --platform=linux/amd64 ruby:3.2.2
+FROM  ruby:3.2.2
 
 # 必要なパッケージのインストール
 RUN apt-get update -qq && apt-get install -y build-essential default-mysql-client
