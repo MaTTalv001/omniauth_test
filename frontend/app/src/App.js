@@ -19,7 +19,7 @@ function App() {
   const fetchUserData = async (token) => {
     try {
       const response = await axios.get(
-        "http://localhost:3041/api/v1/users/me",
+        "http://localhost:3041/api/v1/users/show_current_user",
         {
           headers: { Authorization: `Bearer ${token}` },
         }

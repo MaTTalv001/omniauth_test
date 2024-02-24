@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
   namespace :api do
     namespace :v1 do
-      get 'users/me', to: 'users#show'
+      get 'users/show_current_user', to: 'users#show_current_user'
     end
   end
   # Defines the root path route ("/")

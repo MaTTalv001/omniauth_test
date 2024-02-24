@@ -5,7 +5,7 @@ module Api
     class UsersController < ApplicationController
       before_action :authenticate_request
 
-      def show
+      def show_current_user
         render json: current_user
       end
     end
