@@ -45,3 +45,9 @@ group :development do
   # gem "spring"
 end
 
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'jwt'
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'omniauth-rails_csrf_protection'
+
